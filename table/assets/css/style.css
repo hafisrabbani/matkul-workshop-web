@@ -1,0 +1,30 @@
+:root {
+    --blue: #6fb8ed;
+    --bone: #f6f6f6;
+}
+
+.left {
+    background-color: var(--bone);
+}
+
+hr {
+    border-top: 5px solid var(--blue);
+    /* height: 5px; */
+}
+
+table {
+    table-layout: fixed;
+}
+
+table td {
+    border-left: 1px solid var(--blue);
+    border-right: 1px solid var(--blue);
+}
+
+ul {
+    list-style: square;
+}
+
+.main-logo {
+    margin-bottom: 50px;
+}
