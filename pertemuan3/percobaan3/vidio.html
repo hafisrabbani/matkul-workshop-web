@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: rgb(138, 50, 220);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        video {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <button class="btn" onclick="playPause()">Play/Pause</button>
+        <button class="btn" onclick="makeBig()">Make Big</button>
+        <button class="btn" onclick="makeSmall()">Make Small</button>
+        <button class="btn" onclick="makeNormal()">Make Normal</button>
+        <br>
+        <video width="420" id="vidio">
+            <source src="../dangdut.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+</body>
+
+<script>
+    var vid = document.getElementById("vidio");
+
+    function playPause() {
+        if (vid.paused) {
+            vid.play();
+        } else {
+            vid.pause();
+        }
+    }
+
+    function makeBig() {
+        vid.width = 560;
+    }
+
+    function makeSmall() {
+        vid.width = 320;
+    }
+
+    function makeNormal() {
+        vid.width = 420;
+    }
+</script>
+
+</html>
